@@ -1,0 +1,9 @@
+{
+  "name": "notes-ops",
+  "version": "0.1.0",
+  "description": "Subagents, a workflow command, a skill, and a hook for working with the notes CLI in this repo.",
+  "author": {
+    "name": "Adi Gilat",
+    "email": "adi1651@gmail.com"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "git-playground-task5",
+  "description": "Marketplace for the notes-ops plugin (subagents, workflow command, skill, and hook for the notes CLI in this repo).",
+  "owner": {
+    "name": "Adi Gilat",
+    "email": "adi1651@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "notes-ops",
+      "source": "./",
+      "description": "Subagents, a workflow command, a skill, and a hook for reviewing and testing the notes CLI."
+    }
+  ]
+}

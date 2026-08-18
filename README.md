@@ -24,3 +24,15 @@ Goal: merge two branches that touched the same line, and have Claude resolve the
 4. **Review the result.** Does the merged line keep *both* changes — what `feature-a` did and what `feature-b` did — or did one side get dropped? A merge can build and run fine and still have quietly thrown away half the work.
 5. **Commit the merge and push `feature-a`.**
 6. **Open a pull request from `feature-a` into `main`.** Ask Claude: *"Open a pull request for `feature-a` into `main`."* Then submit the pull request link.
+
+## notes-ops plugin
+
+This repo also hosts a Claude Code plugin, `notes-ops` — subagents, a multi-agent workflow command, a skill, and a hook for working with the notes CLI above.
+
+- `.claude-plugin/plugin.json` — plugin manifest (name, version).
+- `agents/` — scoped subagents, each limited to the tools and model its job needs.
+- `commands/` — the multi-agent workflow command that orchestrates the subagents (parallel + dependent steps).
+- `skills/` — supporting skill.
+- `hooks/` — supporting hook.
+
+Status: scaffold only — components are added in later tasks.
