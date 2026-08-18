@@ -13,7 +13,7 @@ function main() {
         return;
       }
       const note = store.add(text);
-      console.log(`Saved note #${note.id}: "${note.text}" — ${store.all().length} notes total`);
+      console.log(`Saved note #${note.id}: "${note.text}" — ${store.all().length} notes total (added at ${new Date().toLocaleTimeString()})`);
       break;
     }
     case "list": {

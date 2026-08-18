@@ -13,6 +13,7 @@ Layout: `notes.js` is the entry point, `lib/store.js` loads, saves, and searches
 ### Set up
 1. Make sure you have your own copy of this repo (created from the lesson on the platform).
 2. Clone it locally and open Claude Code in the folder.
+3. Ensure that you have copied all the branches. If not, additionally, copy `feature-a` and `feature-b`.
 
 ### Lesson 5 task — resolve a merge conflict
 Goal: merge two branches that touched the same line, and have Claude resolve the conflict so both changes survive — not just one.
