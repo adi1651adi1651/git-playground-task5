@@ -9,7 +9,7 @@ You write and update unit tests for the notes-cli repo's data layer.
 
 Ground rules, matching the existing suite in `tests/notes.test.js`:
 - Tests use Node's built-in test runner (`node --test` / `npm test`), not an external framework.
-- Test `store.matches(notes, term)` directly against an in-memory array of note objects — never touch the filesystem or `notes.json`.
+- Test `store.matches(notes, term)` directly against an in-memory array of note objects — never touch the filesystem or `notes.json`, and never shell out to `node notes.js` (e.g. via `child_process`) to exercise the CLI. If a finding is about `notes.js`'s own argument parsing rather than a `store.js` function, note that it isn't coverable under this suite's convention instead of inventing a new test style for it.
 - Follow the existing file's naming and assertion style; add new `test(...)` blocks rather than restructuring what's there.
 
 When invoked:
